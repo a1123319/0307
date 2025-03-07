@@ -38,10 +38,20 @@
             </tbody>
         </table>
         <br>
-        <form>
-            場次<input type="text">
-            姓名<input type="text">
-            連絡電話<input type="text">
+        <form action="info.php" method="post">
+            場次
+            <select name="place">
+                <option value="1">一</option>
+                <option value="2">二</option>
+                <option value="3">三</option>
+                <option value="4">四</option>
+            </select>
+            <br>
+            姓名<input type="text" name="name"><br>
+            E-Mail<input type="email" name="email"><br>
+            連絡電話<input type="tel" name="phone"><br>
+            備註<br><textarea name="note" rows="5" cols="30"></textarea><br>
+            <input type="submit" value="點我報名">
         </form>
         <a href="activity-introduction.html">👉迎新活動介紹看這裡</a>
     </body>
